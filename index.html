@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>معهد العالي للعلوم والتقنية - رقدالين</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<link rel="icon" href="icons/courses_letters_blackboard_board_staff_book_1475.ico">
+</head>
+<body>
+    <!-- شاشة البداية -->
+    <div id="splash-screen">
+        <img src="imgs/معهد.jpg" alt="شعار المعهد" id="logo">
+        <div id="institute-name">معهد العالي للعلوم والتقنية - رقدالين</div>
+    </div>
+    
+    <!-- المحتوى الرئيسي -->
+    <div id="main-content" style="display:none;">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#home">
+                <img src="imgs/معهد.jpg" alt="" style="width: 80px; height: 80px;">
+            </a>
+            <button class="navbar-toggler" type="button" id="navbar-toggler" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">الصفحة الرئيسية</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#news">أخبارنا</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#registration">نموذج التسجيل</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#departments">الأقسام</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">معلومات عنا</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">تواصل معنا</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    
+    <!-- قسم المحتوى -->
+    <section class="home" id="home">
+        <div class="card text-bg-dark">
+            <img src="imgs/Photoroom-20240811_173318.png" class="card-img" alt="...">
+        </div>
+    </section>
+    
+<section class="news-section" id="news">
+    <h1>الاخبار</h1>
+    <div id="newsCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="card">
+                    <img src="imgs/20240813021220367.jpg" class="d-block w-100" alt="Learning to Code">
+                    <div class="content">
+                        <h2>مشاركة </h2>
+                        <h4>النائلي" مدير عام المعهد العالي للعلوم والتقنية رقدالين يقدم عرضاً تفصيلياً عن مبادراة المعهد في مجال ريادة الأعمال
+                            طرابلس 12 أغسطس 2024</h4>
+                         
+                        <a href="https://www.tve.gov.ly/ar/Details/News195" class="read-more"> قراءة المزيد</a>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="card">
+                    <img src="imgs/tarjetas-blog.jpg" class="d-block w-100" alt="Mastering the Language">
+                    <div class="content">
+                        <h2>Mastering the Language</h2>
+                        <h4>Java is Not the Same as JavaScript</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad eum dolorum architecto obcaecati enim dicta praesentium.</p>
+                        <a href="#" class="read-more">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <!-- يمكنك إضافة المزيد من العناصر هنا -->
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#newsCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#newsCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</section>
+
+
+<section class="registration-section" id="registration">
+    <h2 style="text-align: center;">التسجيل</h2>
+    <div class="registration-container">
+        <div class="form-image">
+            <img src="imgs/Learning-bro.png" alt="Registration Image">
+        </div>
+        <div class="form-content">
+            <form>
+                <div class="input-group">
+                    <label for="name">الاسم</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="input-group">
+                    <label for="birthdate">تاريخ الميلاد</label>
+                    <input type="date" id="birthdate" name="birthdate" required>
+                </div>
+                <div class="input-group">
+                    <label for="gender">الجنس</label>
+                    <select id="gender" name="gender" required>
+                        <option value="">حدد الجنس</option>
+                        <option value="male">ذكر</option>
+                        <option value="female">انثى</option>
+                        <option value="other">آخر</option>
+                    </select>
+                </div>
+                <div class="input-group">
+                    <label for="email">البريد الالكتروني</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="input-group">
+                    <label for="phone">رقم الهاتق</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+                <div class="input-group">
+                    <label for="phone">المستندات</label>
+                    <input type="file" id="phone" name="phone" required>
+                </div>
+                <div class="input-group">
+                    <button type="submit">تقديم</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+
+<section class="catqure" id="departments">
+    <h2 style="text-align: center;">الاقسام</h2>
+<div class="card-container">
+    <div class="card education">
+        <div class="icon">
+            <!-- هنا يمكنك إضافة أيقونة education -->
+            <img src="imgs/—Pngtree—electricity_6030748.png" alt="الهندسه الكهربائيه">
+        </div>
+        <div class="title">الهندسه الكهربائيه</div>
+    </div>
+    <div class="card credentialing">
+        <div class="icon">
+            <!-- هنا يمكنك إضافة أيقونة credentialing -->
+            <img src="imgs/—Pngtree—laptop _5184713.png" alt="هندسه الحاسوب">
+        </div>
+        <div class="title">هندسه الحاسوب</div>
+    </div>
+    <div class="card wallet">
+        <div class="icon">
+            <!-- هنا يمكنك إضافة أيقونة wallet -->
+            <img src="imgs/oil1.jpg" alt="هندسه نفطيه">
+        </div>
+        <div class="title">هندسه نفطيه</div>
+    </div>
+    <div class="card human-resources">
+        <div class="icon">
+            <!-- هنا يمكنك إضافة أيقونة human resources -->
+            <img src="imgs/rag-doll-with-bar-graph-green-pencil.jpg" alt="العلوم الاداريه">
+        </div>
+        <div class="title">العلوم الاداريه</div>
+    </div>
+    <div class="card human-resources">
+        <div class="icon">
+            <!-- هنا يمكنك إضافة أيقونة human resources -->
+            <img src="imgs/view-building-with-cartoon-style-architecture.jpg" alt="العماره">
+        </div>
+        <div class="title"> العماره</div>
+    </div>
+</div>
+</section>
+<section class="about" id="about">
+
+    <div class="card">
+        <div class="card-image">
+            <img src="imgs/معهد.jpg" alt="Card Image">
+        </div>
+        <div class="card-content">
+            <span class="card-date">26 December 1993</span>
+            <h2 class="card-title">معلومات عنا</h2>
+            <p class="card-text">المعهد العالي رقدالين هو مؤسسة تعليمية تقع في مدينة رقدالين بليبيا. تأسس المعهد في عام 1993، ومنذ ذلك الوقت يسعى إلى تقديم تعليم عالي الجودة لطلابه. يهدف المعهد إلى تطوير المهارات والكفاءات الأكاديمية والمهنية للطلاب في مختلف التخصصات، بما يتماشى مع احتياجات سوق العمل المحلي والدولي.</p>
+        </div>
+    </div>
+</section>
+    <section class="conn" id="contact">
+        <div class="contact-container">
+            <div class="contact-form">
+                <h2>تواصل معنا</h2>
+                <form action="#">
+                    <input type="text" placeholder="الاسم بالكامل" required>
+                    <input type="email" placeholder="البريد الالكتروني" required>
+                    <textarea placeholder="ادخل رسالتك" required></textarea>
+                    <button type="submit">ارسل</button>
+                </form>
+            </div>
+            <div class="contact-image">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3350.3642205320666!2d11.977302505725422!3d32.888537236407124!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13abdd4a6a8a51cd%3A0x333ed5daa5b3537d!2z2KfZhNmF2LnZh9ivINin2YTYudin2YTZiiDZhNmE2LnZhNmI2YUg2YjYp9mE2KrZgtmG2YrYqSDYsdmC2K_Yp9mE2YrZhg!5e0!3m2!1sen!2sly!4v1724437530194!5m2!1sen!2sly" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <h3>معهد العالي للعلوم والتقنية - رقدالين</h3>
+            <ul class="socials">
+                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+                <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                <li><a href="#"><i class="fab fa-github"></i></a></li>
+            </ul>
+        </div>
+        <div class="footer-bottom">
+            <p>حقوق النشر &copy; 2024 محفوظة لدى معهد العالي للعلوم والتقنية رقدالين <span>تصميم : محمد صوله</span></p>
+        </div>
+    </footer>
+
+
+
+    <!-- تضمين Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-bp5F8S1tSf9mE6Rlfz8+cU9e/lQe5Zb6kGJ8I1n7e9RDl0F2kHJkzdo3MNSoIm4G" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+</body>
+</html>
